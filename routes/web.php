@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RolesController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,9 +21,11 @@ Route::get('/', function () {
 });
 
 Route::post('dashboard', [LoginController::class, 'login'])->name('adminLogin');
+Route::get('dashboard', [LoginController::class, 'login'])->name('dashboard');
 // Route::group(['prefix' => 'administrator'], function () {
 //     Route::post('dashboard', [LoginController::class, 'login'])->name('adminLogin');
 // });
 
 Route::get('roles', [RolesController::class, 'getRoles'])->name('roles');
+Route::get('subroles', [RolesController::class, 'getSubRoles'])->name('subroles');
 

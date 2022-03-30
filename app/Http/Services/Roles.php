@@ -23,7 +23,8 @@ use Validator;
 use Response;
 use Carbon\Carbon;
 use App\Models\Role;
-class Home extends Config
+use App\Models\SubRole;
+class Roles extends Config
 {
 
     /**
@@ -41,6 +42,14 @@ class Home extends Config
         $roles = $this->getRoleModel()->getAllRoles();
         return view('roles', compact('roles'));
     }
+
+    public function getSubRoles()
+    {
+        $subRoles = $this->getSubRoleModel()->getAllSubRoles();
+        return view('subroles', compact('subRoles'));
+    }
+
+    
 
     
 

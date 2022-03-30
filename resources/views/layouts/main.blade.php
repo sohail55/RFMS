@@ -27,11 +27,11 @@
 <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="120x120" href="../../assets/img/favicon/apple-touch-icon.png">
+<!-- <link rel="apple-touch-icon" sizes="120x120" href="../../assets/img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon/favicon-16x16.png">
 <link rel="manifest" href="../../assets/img/favicon/site.webmanifest">
-<link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff"> -->
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
@@ -45,6 +45,11 @@
 <link type="text/css" href="{{ asset('public/css/volt.css') }}" rel="stylesheet">
 
 <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+<link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+
+//
 
 </head>
 
@@ -105,6 +110,13 @@
 
 <!-- Volt JS -->
 <script src="{{ asset('public/assets/js/volt.js') }} "></script>
+
+
+
+
+<!-- <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script> -->
+
+
 
     
 </body>

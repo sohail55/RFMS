@@ -13,7 +13,16 @@ class RolesController extends Controller
     public function getRoles()
     {
         try {
-            return $this->getHomeService()->getRoles();
+            return $this->getRolesService()->getRoles();
+        } catch (\Exception $ex) {
+            return $this->exception($ex);
+        }
+    }
+
+    public function getSubRoles()
+    {
+        try {
+            return $this->getRolesService()->getSubRoles();
         } catch (\Exception $ex) {
             return $this->exception($ex);
         }

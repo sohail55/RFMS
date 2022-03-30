@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 use App\Http\Services\Home;
+use App\Http\Services\Roles;
 
 class Controller extends BaseController
 {
@@ -22,6 +23,11 @@ class Controller extends BaseController
     public function getHomeService()
     {
         return new Home();
+    }
+
+    public function getRolesService()
+    {
+        return new Roles();
     }
 
     public function exception($ex)

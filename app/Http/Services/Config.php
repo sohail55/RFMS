@@ -14,12 +14,9 @@
 
 namespace App\Http\Services;
 
-use App\User;
-use App\ComplaintHistory;
-use App\ChallanImage;
-use App\MembersTransaction;
-use App\MembersSignup;
-use App\MembersBills;
+use App\Models\User;
+use App\Models\Role;
+use App\Models\SubRole;
 
 
 class Config
@@ -31,29 +28,14 @@ class Config
         return !empty($user) ? $user : [];
     }
 
-    public function getComplaintHistoryModel()
+    public function getRoleModel()
     {
-        return new ComplaintHistory();
+        return new Role();
     }
 
-    public function getChallanImageModel()
+    public function getSubRoleModel()
     {
-        return new ChallanImage();
-    }
-
-    public function getMembersTransactionModel()
-    {
-        return new MembersTransaction();
-    }
-
-    public function getMembersSignupModel()
-    {
-        return new MembersSignup();
-    }
-
-    public function getMembersBillsModel()
-    {
-        return new MembersBills();
+        return new SubRole();
     }
     
     
