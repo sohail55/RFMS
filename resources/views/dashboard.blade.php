@@ -4,206 +4,7 @@
   <main class="content">
 
       
-      <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0">
-        <div class="container-fluid px-0">
-          <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
-            <div class="d-flex align-items-center">
-              <!-- Search form -->
-             <!--  <form class="navbar-search form-inline" id="navbar-search-main">
-                <div class="input-group input-group-merge search-bar">
-                    <span class="input-group-text" id="topbar-addon">
-                      <svg class="icon icon-xs" x-description="Heroicon name: solid/search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
-                      </svg>
-                    </span>
-                    <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="topbar-addon">
-                </div>
-              </form> -->
-              <!-- / Search form -->
-            </div>
-            <div class="d-flex align-items-center">
-              <span class="rfms">Residents Facilitation Management System (RFMS) </span>
-            </div>
-            <!-- Navbar links -->
-            <ul class="navbar-nav align-items-center">
-              <li class="nav-item dropdown">
-                <a class="nav-link text-dark notification-bell unread dropdown-toggle" data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                  <svg class="icon icon-sm text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
-                </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0">
-                  <div class="list-group list-group-flush">
-                    <a href="#" class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
-                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                      <div class="row align-items-center">
-                          <div class="col-auto">
-                            <!-- Avatar -->
-                            <img alt="Image placeholder" src="{{ asset('public/assets/img/team/profile-picture-1.jpg') }}" class="avatar-md rounded">
-                          </div>
-                          <div class="col ps-0 ms-2">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                  <h4 class="h6 mb-0 text-small">Jose Leos</h4>
-                                </div>
-                                <div class="text-end">
-                                  <small class="text-danger">a few moments ago</small>
-                                </div>
-                            </div>
-                            <p class="font-small mt-1 mb-0">Added you to an event "Project stand-up" tomorrow at 12:30 AM.</p>
-                          </div>
-                      </div>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                      <div class="row align-items-center">
-                          <div class="col-auto">
-                            <!-- Avatar -->
-                            <img alt="Image placeholder" src="{{ asset('public/assets/img/team/profile-picture-2.jpg') }}" class="avatar-md rounded">
-                          </div>
-                          <div class="col ps-0 ms-2">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                  <h4 class="h6 mb-0 text-small">Neil Sims</h4>
-                                </div>
-                                <div class="text-end">
-                                  <small class="text-danger">2 hrs ago</small>
-                                </div>
-                            </div>
-                            <p class="font-small mt-1 mb-0">You've been assigned a task for "Awesome new project".</p>
-                          </div>
-                      </div>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                      <div class="row align-items-center">
-                          <div class="col-auto">
-                            <!-- Avatar -->
-                            <img alt="Image placeholder" src=" {{ asset('public/assets/img/team/profile-picture-3.jpg') }} " class="avatar-md rounded">
-                          </div>
-                          <div class="col ps-0 m-2">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                  <h4 class="h6 mb-0 text-small">Roberta Casas</h4>
-                                </div>
-                                <div class="text-end">
-                                  <small>5 hrs ago</small>
-                                </div>
-                            </div>
-                            <p class="font-small mt-1 mb-0">Tagged you in a document called "Financial plans",</p>
-                          </div>
-                      </div>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                      <div class="row align-items-center">
-                          <div class="col-auto">
-                            <!-- Avatar -->
-                            <img alt="Image placeholder" src=" {{ asset('public/assets/img/team/profile-picture-4.jpg') }} " class="avatar-md rounded">
-                          </div>
-                          <div class="col ps-0 ms-2">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                  <h4 class="h6 mb-0 text-small">Joseph Garth</h4>
-                                </div>
-                                <div class="text-end">
-                                  <small>1 d ago</small>
-                                </div>
-                            </div>
-                            <p class="font-small mt-1 mb-0">New message: "Hey, what's up? All set for the presentation?"</p>
-                          </div>
-                      </div>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action border-bottom">
-                      <div class="row align-items-center">
-                          <div class="col-auto">
-                            <!-- Avatar -->
-                            <img alt="Image placeholder" src=" {{ asset('public/assets/img/team/profile-picture-5.jpg') }}" class="avatar-md rounded">
-                          </div>
-                          <div class="col ps-0 ms-2">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                  <h4 class="h6 mb-0 text-small">Bonnie Green</h4>
-                                </div>
-                                <div class="text-end">
-                                  <small>2 hrs ago</small>
-                                </div>
-                            </div>
-                            <p class="font-small mt-1 mb-0">New message: "We need to improve the UI/UX for the landing page."</p>
-                          </div>
-                      </div>
-                    </a>
-                    <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
-                      <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
-                      View all
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item dropdown ms-lg-3">
-                <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="media d-flex align-items-center">
-                    <img class="avatar rounded-circle" alt="Image placeholder" src="{{ asset('public/assets/img/team/profile-picture-3.jpg') }}  ">
-                    <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                      <span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
-                    </div>
-                  </div>
-                </a>
-                <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path></svg>
-                    My Profile
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-                    Settings
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z" clip-rule="evenodd"></path></svg>
-                    Messages
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd"></path></svg>
-                    Support
-                  </a>
-                  <div role="separator" class="dropdown-divider my-1"></div>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <svg class="dropdown-icon text-danger me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>                
-                    Logout
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="py-4">
-          <div class="dropdown">
-              <!-- <button class="btn btn-gray-800 d-inline-flex align-items-center me-2 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-                  New Task
-              </button> -->
-              <!-- <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                      <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"></path></svg>
-                      Add User
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                      <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>                            
-                      Add Widget
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                      <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"></path><path d="M9 13h2v5a1 1 0 11-2 0v-5z"></path></svg>                            
-                      Upload Files
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                      <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                      Preview Security
-                  </a>
-                  <div role="separator" class="dropdown-divider my-1"></div>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                      <svg class="dropdown-icon text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>
-                      Upgrade to Pro
-                  </a>
-              </div> -->
-          </div>
-      </div>
+      @include('components.header_menu')
       <div class="row">
           <div class="col-12 col-sm-6 col-xl-4 mb-4">
               <div class="card border-0 shadow">
@@ -211,17 +12,17 @@
                       <div class="row d-block d-xl-flex align-items-center">
                           <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
                               <div class="icon-shape icon-shape-primary rounded me-4 me-sm-0">
-                                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+                                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 114.18" style="enable-background:new 0 0 122.88 114.18" xml:space="preserve"><g><path d="M94.78,0.04c-1.89-0.2-3.57,0.29-5.06,1.48c-1.48,1.19-2.3,2.73-2.5,4.63l-1.57,14.89c-0.2,1.9,0.29,3.59,1.48,5.06 c1.19,1.47,2.73,2.3,4.63,2.5l5.62,0.59c-0.55,1.47-1.19,2.85-1.93,4.13c-0.73,1.3-1.88,2.49-3.4,3.58 c2.74-0.41,5.22-1.2,7.47-2.35c2.23-1.14,4.22-2.65,5.92-4.5l6.24,0.66c1.89,0.2,3.57-0.31,5.06-1.48c1.48-1.19,2.3-2.73,2.5-4.63 l1.57-14.89c0.2-1.89-0.29-3.57-1.48-5.06c-1.19-1.48-2.73-2.3-4.63-2.5L94.78,0.04L94.78,0.04L94.78,0.04z M40.19,56.95 c13.2-3.19,27.52-3.67,43.55,0c1.31,0.3,2.67,0.99,3.35,2.04c0.28,0.3,0.54,0.63,0.75,0.99l9.88,13.81l6.05-16.57 c0.58-1.65,1.33-2.73,2.36-3.23l0-0.02l6.75-5.05c0.72-0.54,1.75-0.39,2.29,0.33v0c0.54,0.72,0.39,1.75-0.33,2.29l-3.94,2.95 c0.35,0.14,0.71,0.29,1.07,0.46l4.31-2.82c0.58-0.38,1.37-0.22,1.75,0.37l0,0c0.38,0.58,0.22,1.37-0.36,1.75l-2.21,1.44h5.63 c0.99,0,1.8,0.81,1.8,1.8l0,0c0,0.99-0.81,1.8-1.8,1.8h-4.88c-0.1,0.64-0.6,1.47-0.8,2.04l-10.49,30.23l-0.01,0 c-0.47,1.32-1.39,2.5-2.69,3.26c-2.93,1.72-6.7,0.74-8.42-2.2L84.36,78.1l-4.65,25.56c-1.03,5.67-4.43,10.51-9.84,10.51H54.06 c-5.41,0-8.81-4.84-9.85-10.51l-4.88-26.81L29.09,92.62c-1.72,2.93-5.49,3.92-8.42,2.2c-1.31-0.77-2.22-1.94-2.69-3.26l-0.01,0 L7.48,61.33c-0.2-0.57-0.69-1.4-0.8-2.04H1.8c-0.99,0-1.8-0.81-1.8-1.8l0,0c0-0.99,0.81-1.8,1.8-1.8h5.63l-2.21-1.44 c-0.58-0.38-0.74-1.17-0.36-1.75l0,0c0.38-0.58,1.17-0.74,1.75-0.37l4.31,2.82c0.36-0.16,0.71-0.32,1.07-0.46l-3.94-2.95 C7.33,51,7.18,49.97,7.72,49.26v0c0.54-0.72,1.57-0.87,2.29-0.33l6.75,5.05l0,0.02c1.03,0.5,1.78,1.58,2.36,3.23l6.05,16.57 l9.88-13.81c1.03-1.75,3-2.81,5.05-3.01L40.19,56.95L40.19,56.95z M61.09,10.08c11.17,0,20.22,9.05,20.22,20.22 c0,11.17-9.05,20.22-20.22,20.22c-11.17,0-20.22-9.05-20.22-20.22C40.87,19.14,49.92,10.08,61.09,10.08L61.09,10.08z M100.8,19.72 l3.25,0.52l-0.46,2.87l-3.25-0.52L100.8,19.72L100.8,19.72z M104.3,18.67l-3.24-0.52c0.31-3.99-0.01-6.28,0.63-10.22 c0.23-1.45,1.6-2.44,3.05-2.2c1.45,0.24,2.44,1.6,2.21,3.05C106.3,12.71,105.26,14.79,104.3,18.67L104.3,18.67z"/></g></svg>
                               </div>
                               <div class="d-sm-none">
                                   <h2 class="h5">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-1">345</h3>
+                                  <h3 class="fw-extrabold mb-1">106</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
                                   <h2 class="h6 text-gray-400 mb-0">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">345</h3>
+                                  <h3 class="fw-extrabold mb-2">106</h3>
                               </div>
                           </div>
                       </div>
@@ -234,17 +35,17 @@
                       <div class="row d-block d-xl-flex align-items-center">
                           <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
                               <div class="icon-shape icon-shape-secondary rounded me-4 me-sm-0">
-                                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
+                                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 114.18" style="enable-background:new 0 0 122.88 114.18" xml:space="preserve"><g><path d="M94.78,0.04c-1.89-0.2-3.57,0.29-5.06,1.48c-1.48,1.19-2.3,2.73-2.5,4.63l-1.57,14.89c-0.2,1.9,0.29,3.59,1.48,5.06 c1.19,1.47,2.73,2.3,4.63,2.5l5.62,0.59c-0.55,1.47-1.19,2.85-1.93,4.13c-0.73,1.3-1.88,2.49-3.4,3.58 c2.74-0.41,5.22-1.2,7.47-2.35c2.23-1.14,4.22-2.65,5.92-4.5l6.24,0.66c1.89,0.2,3.57-0.31,5.06-1.48c1.48-1.19,2.3-2.73,2.5-4.63 l1.57-14.89c0.2-1.89-0.29-3.57-1.48-5.06c-1.19-1.48-2.73-2.3-4.63-2.5L94.78,0.04L94.78,0.04L94.78,0.04z M40.19,56.95 c13.2-3.19,27.52-3.67,43.55,0c1.31,0.3,2.67,0.99,3.35,2.04c0.28,0.3,0.54,0.63,0.75,0.99l9.88,13.81l6.05-16.57 c0.58-1.65,1.33-2.73,2.36-3.23l0-0.02l6.75-5.05c0.72-0.54,1.75-0.39,2.29,0.33v0c0.54,0.72,0.39,1.75-0.33,2.29l-3.94,2.95 c0.35,0.14,0.71,0.29,1.07,0.46l4.31-2.82c0.58-0.38,1.37-0.22,1.75,0.37l0,0c0.38,0.58,0.22,1.37-0.36,1.75l-2.21,1.44h5.63 c0.99,0,1.8,0.81,1.8,1.8l0,0c0,0.99-0.81,1.8-1.8,1.8h-4.88c-0.1,0.64-0.6,1.47-0.8,2.04l-10.49,30.23l-0.01,0 c-0.47,1.32-1.39,2.5-2.69,3.26c-2.93,1.72-6.7,0.74-8.42-2.2L84.36,78.1l-4.65,25.56c-1.03,5.67-4.43,10.51-9.84,10.51H54.06 c-5.41,0-8.81-4.84-9.85-10.51l-4.88-26.81L29.09,92.62c-1.72,2.93-5.49,3.92-8.42,2.2c-1.31-0.77-2.22-1.94-2.69-3.26l-0.01,0 L7.48,61.33c-0.2-0.57-0.69-1.4-0.8-2.04H1.8c-0.99,0-1.8-0.81-1.8-1.8l0,0c0-0.99,0.81-1.8,1.8-1.8h5.63l-2.21-1.44 c-0.58-0.38-0.74-1.17-0.36-1.75l0,0c0.38-0.58,1.17-0.74,1.75-0.37l4.31,2.82c0.36-0.16,0.71-0.32,1.07-0.46l-3.94-2.95 C7.33,51,7.18,49.97,7.72,49.26v0c0.54-0.72,1.57-0.87,2.29-0.33l6.75,5.05l0,0.02c1.03,0.5,1.78,1.58,2.36,3.23l6.05,16.57 l9.88-13.81c1.03-1.75,3-2.81,5.05-3.01L40.19,56.95L40.19,56.95z M61.09,10.08c11.17,0,20.22,9.05,20.22,20.22 c0,11.17-9.05,20.22-20.22,20.22c-11.17,0-20.22-9.05-20.22-20.22C40.87,19.14,49.92,10.08,61.09,10.08L61.09,10.08z M100.8,19.72 l3.25,0.52l-0.46,2.87l-3.25-0.52L100.8,19.72L100.8,19.72z M104.3,18.67l-3.24-0.52c0.31-3.99-0.01-6.28,0.63-10.22 c0.23-1.45,1.6-2.44,3.05-2.2c1.45,0.24,2.44,1.6,2.21,3.05C106.3,12.71,105.26,14.79,104.3,18.67L104.3,18.67z"/></g></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5">Pending Complaints</h2>
-                                  <h3 class="mb-1">94</h3>
+                                  <h2 class="fw-extrabold h5">Closed Complaints</h2>
+                                  <h3 class="mb-1">79</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0">Pending Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">94</h3>
+                                  <h2 class="h6 text-gray-400 mb-0">Closed Complaints</h2>
+                                  <h3 class="fw-extrabold mb-2">79</h3>
                               </div>
                           </div>
                       </div>
@@ -257,17 +58,17 @@
                       <div class="row d-block d-xl-flex align-items-center">
                           <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
                               <div class="icon-shape icon-shape-tertiary rounded me-4 me-sm-0">
-                                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 114.18" style="enable-background:new 0 0 122.88 114.18" xml:space="preserve"><g><path d="M94.78,0.04c-1.89-0.2-3.57,0.29-5.06,1.48c-1.48,1.19-2.3,2.73-2.5,4.63l-1.57,14.89c-0.2,1.9,0.29,3.59,1.48,5.06 c1.19,1.47,2.73,2.3,4.63,2.5l5.62,0.59c-0.55,1.47-1.19,2.85-1.93,4.13c-0.73,1.3-1.88,2.49-3.4,3.58 c2.74-0.41,5.22-1.2,7.47-2.35c2.23-1.14,4.22-2.65,5.92-4.5l6.24,0.66c1.89,0.2,3.57-0.31,5.06-1.48c1.48-1.19,2.3-2.73,2.5-4.63 l1.57-14.89c0.2-1.89-0.29-3.57-1.48-5.06c-1.19-1.48-2.73-2.3-4.63-2.5L94.78,0.04L94.78,0.04L94.78,0.04z M40.19,56.95 c13.2-3.19,27.52-3.67,43.55,0c1.31,0.3,2.67,0.99,3.35,2.04c0.28,0.3,0.54,0.63,0.75,0.99l9.88,13.81l6.05-16.57 c0.58-1.65,1.33-2.73,2.36-3.23l0-0.02l6.75-5.05c0.72-0.54,1.75-0.39,2.29,0.33v0c0.54,0.72,0.39,1.75-0.33,2.29l-3.94,2.95 c0.35,0.14,0.71,0.29,1.07,0.46l4.31-2.82c0.58-0.38,1.37-0.22,1.75,0.37l0,0c0.38,0.58,0.22,1.37-0.36,1.75l-2.21,1.44h5.63 c0.99,0,1.8,0.81,1.8,1.8l0,0c0,0.99-0.81,1.8-1.8,1.8h-4.88c-0.1,0.64-0.6,1.47-0.8,2.04l-10.49,30.23l-0.01,0 c-0.47,1.32-1.39,2.5-2.69,3.26c-2.93,1.72-6.7,0.74-8.42-2.2L84.36,78.1l-4.65,25.56c-1.03,5.67-4.43,10.51-9.84,10.51H54.06 c-5.41,0-8.81-4.84-9.85-10.51l-4.88-26.81L29.09,92.62c-1.72,2.93-5.49,3.92-8.42,2.2c-1.31-0.77-2.22-1.94-2.69-3.26l-0.01,0 L7.48,61.33c-0.2-0.57-0.69-1.4-0.8-2.04H1.8c-0.99,0-1.8-0.81-1.8-1.8l0,0c0-0.99,0.81-1.8,1.8-1.8h5.63l-2.21-1.44 c-0.58-0.38-0.74-1.17-0.36-1.75l0,0c0.38-0.58,1.17-0.74,1.75-0.37l4.31,2.82c0.36-0.16,0.71-0.32,1.07-0.46l-3.94-2.95 C7.33,51,7.18,49.97,7.72,49.26v0c0.54-0.72,1.57-0.87,2.29-0.33l6.75,5.05l0,0.02c1.03,0.5,1.78,1.58,2.36,3.23l6.05,16.57 l9.88-13.81c1.03-1.75,3-2.81,5.05-3.01L40.19,56.95L40.19,56.95z M61.09,10.08c11.17,0,20.22,9.05,20.22,20.22 c0,11.17-9.05,20.22-20.22,20.22c-11.17,0-20.22-9.05-20.22-20.22C40.87,19.14,49.92,10.08,61.09,10.08L61.09,10.08z M100.8,19.72 l3.25,0.52l-0.46,2.87l-3.25-0.52L100.8,19.72L100.8,19.72z M104.3,18.67l-3.24-0.52c0.31-3.99-0.01-6.28,0.63-10.22 c0.23-1.45,1.6-2.44,3.05-2.2c1.45,0.24,2.44,1.6,2.21,3.05C106.3,12.71,105.26,14.79,104.3,18.67L104.3,18.67z"/></g></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5"> In Progress</h2>
-                                  <h3 class="mb-1">25</h3>
+                                  <h2 class="fw-extrabold h5"> Open Complaints</h2>
+                                  <h3 class="mb-1">8</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0"> In Progress</h2>
-                                  <h3 class="fw-extrabold mb-2">25</h3>
+                                  <h2 class="h6 text-gray-400 mb-0"> Open Complaints</h2>
+                                  <h3 class="fw-extrabold mb-2">8</h3>
                               </div>
                               
                           </div>
@@ -286,14 +87,14 @@
                                   <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="h5">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-1">345</h3>
+                                  <h2 class="h5">Total Customers</h2>
+                                  <h3 class="fw-extrabold mb-1">147</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">345</h3>
+                                  <h2 class="h6 text-gray-400 mb-0">Total Customers</h2>
+                                  <h3 class="fw-extrabold mb-2">147</h3>
                               </div>
                           </div>
                       </div>
@@ -309,14 +110,14 @@
                                   <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5">Pending Complaints</h2>
-                                  <h3 class="mb-1">94</h3>
+                                  <h2 class="fw-extrabold h5">Registered Customers</h2>
+                                  <h3 class="mb-1">34</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0">Pending Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">94</h3>
+                                  <h2 class="h6 text-gray-400 mb-0">Registered Customers</h2>
+                                  <h3 class="fw-extrabold mb-2">34</h3>
                               </div>
                           </div>
                       </div>
@@ -332,14 +133,14 @@
                                   <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5"> In Progress</h2>
-                                  <h3 class="mb-1">25</h3>
+                                  <h2 class="fw-extrabold h5"> Pending Customers</h2>
+                                  <h3 class="mb-1">113</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0"> In Progress</h2>
-                                  <h3 class="fw-extrabold mb-2">25</h3>
+                                  <h2 class="h6 text-gray-400 mb-0"> Pending Customers</h2>
+                                  <h3 class="fw-extrabold mb-2">113</h3>
                               </div>
                               
                           </div>
@@ -355,17 +156,18 @@
                       <div class="row d-block d-xl-flex align-items-center">
                           <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
                               <div class="icon-shape icon-shape-primary rounded me-4 me-sm-0">
-                                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+                                  <!-- <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg> -->
+                                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 85.82"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>food-delivery</title><path class="" d="M77.1.61h40.36a2.48,2.48,0,0,1,2.47,2.47V30.52h.24a2.72,2.72,0,0,1,2.71,2.72v3A2.77,2.77,0,0,1,120.12,39H101.05c14.17,1.26,22.27,14.44,21.39,31.58H109.83a15,15,0,0,1-29.95,0h-38c0-.27,0-.54,0-.8a40.85,40.85,0,0,1-.34,5.8l-7.91-3.73A15.29,15.29,0,1,1,7.61,59.63L0,56c6.34-7.21,14-10.24,23.25-8.16,3.31.84,6.41,1.59-.08,0A112.39,112.39,0,0,1,33.72,13.07L29,13h0c-1,0-2.05.25-2.72-.24a3.59,3.59,0,0,1-2.88-1.84,7.12,7.12,0,0,1-1-3.79,7.16,7.16,0,0,1,1-3.8,3.91,3.91,0,0,1,2-1.68,1,1,0,0,1,0-.3C26.51-.46,28.7.08,30.65.08l1.9.12a11.1,11.1,0,0,1,4,1.36l2.17,1.22h1.76L46.4,3.92c1.93.38,2.21.22,1.76,2.59a7.49,7.49,0,0,1-.24.9c-.58,1.73-1,1.09-2.84.72L39.55,7c.21,2.23-.5,5-1.49,8.15,3.17,2.69,4.61,6.52,2.43,11.58L35.21,43c8.86,6.28,14.18,12,14.49,21.29H60.93c7.22-5.47,6-15.21-1.9-21.43V39h0V33.16c0-1.86,1-2.7,2.85-2.64H74.63V3.08A2.48,2.48,0,0,1,77.1.61ZM24.36,67.53,16.81,64a6.72,6.72,0,1,0,7.55,3.56Zm1.1-64.26c.09,2.53.25,5.78.37,8a3.4,3.4,0,0,1-.61-.72,6.54,6.54,0,0,1-.89-3.46,6.5,6.5,0,0,1,.89-3.45c.08-.12.16-.24.24-.34ZM98.22,4.86a2.27,2.27,0,0,1,1.6.67,2.32,2.32,0,0,1,.35,2.8,13.12,13.12,0,0,1,3.41,1c5,2.5,7.74,6.41,7.74,12.22a.67.67,0,0,1-.62.67H85.77a.66.66,0,0,1-.66-.67A12.88,12.88,0,0,1,92.85,9.34a12.64,12.64,0,0,1,3.41-1,2.31,2.31,0,0,1,.35-2.8,2.28,2.28,0,0,1,1.61-.67ZM82.36,26.09V24.22a.19.19,0,0,1,.19-.2h31.24a.19.19,0,0,1,.19.2v1.87a.19.19,0,0,1-.19.19H82.55a.19.19,0,0,1-.19-.19ZM101.45,70.6a6.6,6.6,0,0,1-13.19,0Z"/></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="h5">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-1">345</h3>
+                                  <h2 class="h5">Total Responders</h2>
+                                  <h3 class="fw-extrabold mb-1">38</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">345</h3>
+                                  <h2 class="h6 text-gray-400 mb-0">Total Responders</h2>
+                                  <h3 class="fw-extrabold mb-2">38</h3>
                               </div>
                           </div>
                       </div>
@@ -378,17 +180,18 @@
                       <div class="row d-block d-xl-flex align-items-center">
                           <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
                               <div class="icon-shape icon-shape-secondary rounded me-4 me-sm-0">
-                                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
+                                  <!-- <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg> -->
+                                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 85.82"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>food-delivery</title><path class="" d="M77.1.61h40.36a2.48,2.48,0,0,1,2.47,2.47V30.52h.24a2.72,2.72,0,0,1,2.71,2.72v3A2.77,2.77,0,0,1,120.12,39H101.05c14.17,1.26,22.27,14.44,21.39,31.58H109.83a15,15,0,0,1-29.95,0h-38c0-.27,0-.54,0-.8a40.85,40.85,0,0,1-.34,5.8l-7.91-3.73A15.29,15.29,0,1,1,7.61,59.63L0,56c6.34-7.21,14-10.24,23.25-8.16,3.31.84,6.41,1.59-.08,0A112.39,112.39,0,0,1,33.72,13.07L29,13h0c-1,0-2.05.25-2.72-.24a3.59,3.59,0,0,1-2.88-1.84,7.12,7.12,0,0,1-1-3.79,7.16,7.16,0,0,1,1-3.8,3.91,3.91,0,0,1,2-1.68,1,1,0,0,1,0-.3C26.51-.46,28.7.08,30.65.08l1.9.12a11.1,11.1,0,0,1,4,1.36l2.17,1.22h1.76L46.4,3.92c1.93.38,2.21.22,1.76,2.59a7.49,7.49,0,0,1-.24.9c-.58,1.73-1,1.09-2.84.72L39.55,7c.21,2.23-.5,5-1.49,8.15,3.17,2.69,4.61,6.52,2.43,11.58L35.21,43c8.86,6.28,14.18,12,14.49,21.29H60.93c7.22-5.47,6-15.21-1.9-21.43V39h0V33.16c0-1.86,1-2.7,2.85-2.64H74.63V3.08A2.48,2.48,0,0,1,77.1.61ZM24.36,67.53,16.81,64a6.72,6.72,0,1,0,7.55,3.56Zm1.1-64.26c.09,2.53.25,5.78.37,8a3.4,3.4,0,0,1-.61-.72,6.54,6.54,0,0,1-.89-3.46,6.5,6.5,0,0,1,.89-3.45c.08-.12.16-.24.24-.34ZM98.22,4.86a2.27,2.27,0,0,1,1.6.67,2.32,2.32,0,0,1,.35,2.8,13.12,13.12,0,0,1,3.41,1c5,2.5,7.74,6.41,7.74,12.22a.67.67,0,0,1-.62.67H85.77a.66.66,0,0,1-.66-.67A12.88,12.88,0,0,1,92.85,9.34a12.64,12.64,0,0,1,3.41-1,2.31,2.31,0,0,1,.35-2.8,2.28,2.28,0,0,1,1.61-.67ZM82.36,26.09V24.22a.19.19,0,0,1,.19-.2h31.24a.19.19,0,0,1,.19.2v1.87a.19.19,0,0,1-.19.19H82.55a.19.19,0,0,1-.19-.19ZM101.45,70.6a6.6,6.6,0,0,1-13.19,0Z"/></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5">Pending Complaints</h2>
-                                  <h3 class="mb-1">94</h3>
+                                  <h2 class="fw-extrabold h5">Online Responders</h2>
+                                  <h3 class="mb-1">16</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0">Pending Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">94</h3>
+                                  <h2 class="h6 text-gray-400 mb-0">Online Responders</h2>
+                                  <h3 class="fw-extrabold mb-2">16</h3>
                               </div>
                           </div>
                       </div>
@@ -401,17 +204,17 @@
                       <div class="row d-block d-xl-flex align-items-center">
                           <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
                               <div class="icon-shape icon-shape-tertiary rounded me-4 me-sm-0">
-                                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 85.82"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>food-delivery</title><path class="" d="M77.1.61h40.36a2.48,2.48,0,0,1,2.47,2.47V30.52h.24a2.72,2.72,0,0,1,2.71,2.72v3A2.77,2.77,0,0,1,120.12,39H101.05c14.17,1.26,22.27,14.44,21.39,31.58H109.83a15,15,0,0,1-29.95,0h-38c0-.27,0-.54,0-.8a40.85,40.85,0,0,1-.34,5.8l-7.91-3.73A15.29,15.29,0,1,1,7.61,59.63L0,56c6.34-7.21,14-10.24,23.25-8.16,3.31.84,6.41,1.59-.08,0A112.39,112.39,0,0,1,33.72,13.07L29,13h0c-1,0-2.05.25-2.72-.24a3.59,3.59,0,0,1-2.88-1.84,7.12,7.12,0,0,1-1-3.79,7.16,7.16,0,0,1,1-3.8,3.91,3.91,0,0,1,2-1.68,1,1,0,0,1,0-.3C26.51-.46,28.7.08,30.65.08l1.9.12a11.1,11.1,0,0,1,4,1.36l2.17,1.22h1.76L46.4,3.92c1.93.38,2.21.22,1.76,2.59a7.49,7.49,0,0,1-.24.9c-.58,1.73-1,1.09-2.84.72L39.55,7c.21,2.23-.5,5-1.49,8.15,3.17,2.69,4.61,6.52,2.43,11.58L35.21,43c8.86,6.28,14.18,12,14.49,21.29H60.93c7.22-5.47,6-15.21-1.9-21.43V39h0V33.16c0-1.86,1-2.7,2.85-2.64H74.63V3.08A2.48,2.48,0,0,1,77.1.61ZM24.36,67.53,16.81,64a6.72,6.72,0,1,0,7.55,3.56Zm1.1-64.26c.09,2.53.25,5.78.37,8a3.4,3.4,0,0,1-.61-.72,6.54,6.54,0,0,1-.89-3.46,6.5,6.5,0,0,1,.89-3.45c.08-.12.16-.24.24-.34ZM98.22,4.86a2.27,2.27,0,0,1,1.6.67,2.32,2.32,0,0,1,.35,2.8,13.12,13.12,0,0,1,3.41,1c5,2.5,7.74,6.41,7.74,12.22a.67.67,0,0,1-.62.67H85.77a.66.66,0,0,1-.66-.67A12.88,12.88,0,0,1,92.85,9.34a12.64,12.64,0,0,1,3.41-1,2.31,2.31,0,0,1,.35-2.8,2.28,2.28,0,0,1,1.61-.67ZM82.36,26.09V24.22a.19.19,0,0,1,.19-.2h31.24a.19.19,0,0,1,.19.2v1.87a.19.19,0,0,1-.19.19H82.55a.19.19,0,0,1-.19-.19ZM101.45,70.6a6.6,6.6,0,0,1-13.19,0Z"/></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5"> In Progress</h2>
-                                  <h3 class="mb-1">25</h3>
+                                  <h2 class="fw-extrabold h5"> Offline Responders</h2>
+                                  <h3 class="mb-1">22</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0"> In Progress</h2>
-                                  <h3 class="fw-extrabold mb-2">25</h3>
+                                  <h2 class="h6 text-gray-400 mb-0"> Offline Responders</h2>
+                                  <h3 class="fw-extrabold mb-2">22</h3>
                               </div>
                               
                           </div>
@@ -427,17 +230,17 @@
                       <div class="row d-block d-xl-flex align-items-center">
                           <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
                               <div class="icon-shape icon-shape-primary rounded me-4 me-sm-0">
-                                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+                                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.88"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#d92d27;}</style></defs><title>no-fire-flame</title><path class="cls-1" d="M101.68,32.93,32.92,101.68a49.29,49.29,0,0,0,77.83-40.24h0a49.12,49.12,0,0,0-9.08-28.51ZM24,93.5,93.49,24a49.25,49.25,0,0,0-66.92,2.61A49.23,49.23,0,0,0,24,93.5Z"/><path d="M43,46.49c1.12,8.32,2.85,14.62,5.8,16.95a48.67,48.67,0,0,1,.84-8.31c1.71-8.89,4.44-9.37,7.07-16a17.69,17.69,0,0,0,.86-10.42C67,30.47,75.7,45.33,77.9,64.22a20.64,20.64,0,0,0,4-11.2,27.21,27.21,0,0,1,7,15.56C90.46,79.7,87.2,86.9,78.57,89.75c1.92-4.61,1.48-8.17-.54-12.86a16.66,16.66,0,0,0-3.36-5.18c-.61,4.57-1.57,8-3.18,9.31A27.31,27.31,0,0,0,71,76.46c-.94-4.89-2.44-5.15-3.88-8.76A9.76,9.76,0,0,1,66.67,62c-5.16.93-10,9.09-11.18,19.46a11.3,11.3,0,0,1-2.2-6.15,15,15,0,0,0-3.84,8.54,13,13,0,0,0,.75,7.53c-6.63-.79-11.08-4.66-13.89-10.9-4-8.94-3.31-15.6.5-24.53A31.13,31.13,0,0,1,43,46.49Z"/><path class="cls-2" d="M61.44,0A61.31,61.31,0,1,1,38,4.66,61.29,61.29,0,0,1,61.44,0Zm40.24,32.93L32.93,101.68A49.44,49.44,0,0,0,80.31,107,49.53,49.53,0,0,0,107,80.3a49,49,0,0,0,3.73-18.86h0a48.93,48.93,0,0,0-9.08-28.51ZM24,93.5,93.5,24A49.32,49.32,0,0,0,24,93.5Z"/></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="h5">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-1">345</h3>
+                                  <h2 class="h5">Total Panics</h2>
+                                  <h3 class="fw-extrabold mb-1">24</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0">Total Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">345</h3>
+                                  <h2 class="h6 text-gray-400 mb-0">Total Panics</h2>
+                                  <h3 class="fw-extrabold mb-2">24</h3>
                               </div>
                           </div>
                       </div>
@@ -453,14 +256,14 @@
                                   <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5">Pending Complaints</h2>
-                                  <h3 class="mb-1">94</h3>
+                                  <h2 class="fw-extrabold h5">Closed Panics</h2>
+                                  <h3 class="mb-1">16</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0">Pending Complaints</h2>
-                                  <h3 class="fw-extrabold mb-2">94</h3>
+                                  <h2 class="h6 text-gray-400 mb-0">Closed Panics</h2>
+                                  <h3 class="fw-extrabold mb-2">16</h3>
                               </div>
                           </div>
                       </div>
@@ -476,14 +279,14 @@
                                   <svg class="icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                               </div>
                               <div class="d-sm-none">
-                                  <h2 class="fw-extrabold h5"> In Progress</h2>
-                                  <h3 class="mb-1">25</h3>
+                                  <h2 class="fw-extrabold h5"> Open Panics</h2>
+                                  <h3 class="mb-1">4</h3>
                               </div>
                           </div>
                           <div class="col-12 col-xl-7 px-xl-0">
                               <div class="d-none d-sm-block">
-                                  <h2 class="h6 text-gray-400 mb-0"> In Progress</h2>
-                                  <h3 class="fw-extrabold mb-2">25</h3>
+                                  <h2 class="h6 text-gray-400 mb-0"> Open Panics</h2>
+                                  <h3 class="fw-extrabold mb-2">4</h3>
                               </div>
                               
                           </div>

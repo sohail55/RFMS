@@ -23,6 +23,7 @@
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://demo.themesberg.com/volt-pro">
 <meta property="twitter:title" content="Volt - Free Bootstrap 5 Dashboard">
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 <meta property="twitter:description" content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
 <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
 
@@ -64,7 +65,6 @@
       
         @yield('content')
         
-
 
         @include('components.footer')
     

@@ -35,7 +35,7 @@ class SubRole extends Model {
      * @return collection
      */
     public function getAllSubRoles() {
-        return SubRole::where('is_removed', 0)->with('roles')->orderBy('id','ASC')->get()->toArray();
+        return SubRole::where('is_removed', 0)->with('roles')->orderBy('id','DESC')->get()->toArray();
     }
 
     public function roles() {

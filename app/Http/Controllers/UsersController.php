@@ -6,26 +6,37 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Login;
 use App\Http\Requests\subRole;
 
-class RolesController extends Controller
+class UsersController extends Controller
 {
 
-    public function getRoles()
+    public function getUsers()
     {
         try {
-            return $this->getRolesService()->getRoles();
+            return $this->getUserService()->getUsers();
         } catch (\Exception $ex) {
             return $this->exception($ex);
         }
     }
 
-    public function getSubRoles()
+    public function getResponders()
     {
         try {
-            return $this->getRolesService()->getSubRoles();
+            return $this->getUserService()->getResponders();
         } catch (\Exception $ex) {
             return $this->exception($ex);
         }
     }
+
+    public function getResidents()
+    {
+        try {
+            return $this->getUserService()->getResidents();
+        } catch (\Exception $ex) {
+            return $this->exception($ex);
+        }
+    }
+
+    
 
     public function createSubRole(subRole $request)
     {

@@ -37,6 +37,11 @@ class Config
     {
         return new SubRole();
     }
+
+    public function getUserModel()
+    {
+        return new User();
+    }
     
     
 }

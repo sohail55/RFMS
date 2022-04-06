@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RolesController;
+use App\Http\Controllers\UsersController;
 
 
 /*
@@ -28,4 +29,9 @@ Route::get('dashboard', [LoginController::class, 'login'])->name('dashboard');
 
 Route::get('roles', [RolesController::class, 'getRoles'])->name('roles');
 Route::get('subroles', [RolesController::class, 'getSubRoles'])->name('subroles');
+Route::post('createSubRole', [RolesController::class, 'createSubRole'])->name('createSubRole');
+Route::get('admins', [UsersController::class, 'getUsers'])->name('admins');
+Route::get('responders', [UsersController::class, 'getResponders'])->name('responders');
+Route::get('residents', [UsersController::class, 'getResidents'])->name('residents');
+//Route::get('createSubRole', [RolesController::class, 'createSubRole'])->name('createSubRole');
 

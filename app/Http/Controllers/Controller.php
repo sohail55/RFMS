@@ -9,6 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 use App\Http\Services\Home;
 use App\Http\Services\Roles;
+use App\Http\Services\Users;
 
 class Controller extends BaseController
 {
@@ -17,7 +18,7 @@ class Controller extends BaseController
 
     public function getUserService()
     {
-        return new User();
+        return new Users();
     }
 
     public function getHomeService()

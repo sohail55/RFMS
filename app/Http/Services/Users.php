@@ -24,7 +24,8 @@ use Response;
 use Carbon\Carbon;
 use App\Models\Role;
 use App\Models\SubRole;
-class Roles extends Config
+use App\Models\User;
+class Users extends Config
 {
 
     /**
@@ -37,10 +38,19 @@ class Roles extends Config
         return view('dashboard');
     }
 
-    public function getRoles()
+    public function getUsers()
     {
-        $roles = $this->getRoleModel()->getAllRoles();
-        return view('roles', compact('roles'));
+        return view('admins');
+    }
+
+    public function getResponders()
+    {
+        return view('responders');
+    }
+
+    public function getResidents()
+    {
+        return view('residents');
     }
 
     public function getSubRoles()
@@ -53,10 +63,10 @@ class Roles extends Config
     {
         $request_params = Request::input();
         unset($request_params['_token']);
-        
+        //dd($request_params);
         $result['role_id'] = $request_params['role'];
         $result['title'] = $request_params['title'];
-        
+        //dd($result);
         $response = $this->getSubRoleModel()->insert($result);
         return response()->json(
         [
