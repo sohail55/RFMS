@@ -768,7 +768,9 @@
                             position: 'top-middle',
                             icon: 'success',
                             title: 'Success',
+                            text: "Sub Role has been added Successfully!", 
                             showConfirmButton: false,
+
                             timer: 1500
                           })
                           setTimeout(function(){// wait for 5 secs(2)

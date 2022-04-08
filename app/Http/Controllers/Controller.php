@@ -10,6 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 use App\Http\Services\Home;
 use App\Http\Services\Roles;
 use App\Http\Services\Users;
+use App\Http\Services\Complaints;
 
 class Controller extends BaseController
 {
@@ -29,6 +30,11 @@ class Controller extends BaseController
     public function getRolesService()
     {
         return new Roles();
+    }
+
+    public function getComplaintsService()
+    {
+        return new Complaints();
     }
 
     public function exception($ex)

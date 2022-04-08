@@ -55,14 +55,14 @@
                   <span class="sidebar-text">SubRoles</span>
                 </a>
               </li>
-              <li class="nav-item ">
+              <!-- <li class="nav-item ">
                 <a href="../../pages/transactions.html" class="nav-link">
                   <span class="sidebar-icon">
                     <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span class="sidebar-text">Transactions</span>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item ">
                 <span
                   class="nav-link   collapsed  d-flex justify-content-between align-items-center"
@@ -104,7 +104,7 @@
                     <span class="sidebar-icon">
                       <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path></svg>
                     </span>
-                    <span class="sidebar-text">Topics</span>
+                    <span class="sidebar-text">Address</span>
                   </span>
                  
                 </a>
@@ -115,7 +115,7 @@
                     <span class="sidebar-icon">
                       <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path></svg>
                     </span>
-                    <span class="sidebar-text">Complaint</span>
+                    <span class="sidebar-text">Panic</span>
                   </span>
                   
                 </a>
@@ -147,33 +147,39 @@
                     <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                   </span>
                 </span>
-                <div class="multi-level collapse { Route::current()->getName() == 'complaints' ? 'show':'' }}"
+                <div class="multi-level collapse {{ Route::current()->getName() == 'newComplaints' || Route::current()->getName() == 'assignedComplaints' || Route::current()->getName() == 'inProgressComplaints' || Route::current()->getName() == 'resolvedComplaints' || Route::current()->getName() == 'closedComplaints'  ? 'show':''  }} "
                   role="list" id="submenu-complaint" aria-expanded="false">
                   <ul class="flex-column nav">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="../../pages/tables/bootstrap-tables.html">
+                    <li class="nav-item {{ Route::current()->getName() == 'newComplaints' ? 'active':'' }} ">
+                      <a class="nav-link d-flex align-items-center justify-content-between" href="{{ route('newComplaints') }}">
                         <span class="sidebar-text">New</span>
+                        <span class="badge badge-sm bg-danger badge-pill notification-count">3</span>
                       </a>
                     </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="../../pages/tables/bootstrap-tables.html">
-                        <span class="sidebar-text">Pending</span>
+                    <li class="nav-item {{ Route::current()->getName() == 'assignedComplaints' ? 'active':'' }} ">
+                      <a class="nav-link" href="{{ route('assignedComplaints') }}">
+                        <span class="sidebar-text">Assigned</span>
                       </a>
                     </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="../../pages/tables/bootstrap-tables.html">
+                    <li class="nav-item {{ Route::current()->getName() == 'inProgressComplaints' ? 'active':'' }}">
+                      <a class="nav-link" href="{{ route('inProgressComplaints') }}">
                         <span class="sidebar-text">In Progress</span>
                       </a>
                     </li>
-                    <li class="nav-item ">
-                      <a class="nav-link" href="../../pages/tables/bootstrap-tables.html">
-                        <span class="sidebar-text">Completed</span>
+                    <li class="nav-item {{ Route::current()->getName() == 'resolvedComplaints' ? 'active':'' }}">
+                      <a class="nav-link" href="{{ route('resolvedComplaints') }}">
+                        <span class="sidebar-text">Resolved</span>
+                      </a>
+                    </li>
+                    <li class="nav-item {{ Route::current()->getName() == 'closedComplaints' ? 'active':'' }}">
+                      <a class="nav-link" href="{{ route('closedComplaints') }}">
+                        <span class="sidebar-text">Closed</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <span
                   class="nav-link  collapsed  d-flex justify-content-between align-items-center"
                   data-bs-toggle="collapse" data-bs-target="#submenu-pages">
@@ -278,8 +284,8 @@
                     </li>
                   </ul>
                 </div>
-              </li>
-              <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
+              </li> -->
+              
 
             </ul>
           </div>
