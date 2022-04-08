@@ -47,6 +47,18 @@ class UsersController extends Controller
             return $this->exception($ex);
         }
     }
+
+    public function onlineResponders()
+    {
+        try {
+            //dd('i am here again');
+            return $this->getUserService()->onlineResponders();
+        } catch (\Exception $ex) {
+            return $this->exception($ex);
+        }
+    }
+
+    
     
     
     

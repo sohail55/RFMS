@@ -77,6 +77,11 @@ class Users extends Config
         //dd($response);
     }
 
+
+    public function onlineResponders() {
+        return view('onlineResponders');
+    }
+
     
 
     

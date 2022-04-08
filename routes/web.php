@@ -38,6 +38,7 @@ Route::post('createSubRole', [RolesController::class, 'createSubRole'])->name('c
 Route::get('admins', [UsersController::class, 'getUsers'])->name('admins');
 Route::get('responders', [UsersController::class, 'getResponders'])->name('responders');
 Route::get('residents', [UsersController::class, 'getResidents'])->name('residents');
+Route::get('onlineResponders', [UsersController::class, 'onlineResponders'])->name('onlineResponders');
 //Route::get('newComplaints', [ComplaintsController::class, 'getNewComplaints'])->name('newComplaints');
 
 //Route::get('createSubRole', [RolesController::class, 'createSubRole'])->name('createSubRole');
